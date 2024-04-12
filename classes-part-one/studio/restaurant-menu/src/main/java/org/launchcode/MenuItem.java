@@ -18,12 +18,17 @@ public class MenuItem {
         this.dateAdded = dateAdded;
 
         Date today = new Date();
+//
+//        if (dayDifferenceForTwoDates(today, dateAdded)) >= 30) {
+//            this.isNew = true;
+//        } else {
+//            this.isNew = false;
+//        }
 
-        if (dateAdded.compareTo(today) <= 30) {
-            this.isNew = true;
-        } else {
-            this.isNew = false;
-        }
+    }
+    private int dayDifferenceForTwoDates(Date d1, Date d2) {
+        int dayDifference = (int)((d2.getTime() - d1.getTime()) / (1000 * 60 * 60 * 24));
+        return dayDifference;
     }
 
     public String getName() {

@@ -11,7 +11,8 @@ public class Main {
 
         //Menu enriquesPasta = new Menu("Enrique's Pasta"...)
 
-        System.out.println(shrimpTaco);
+        System.out.println(shrimpPasta);
+        System.out.println(tomatoPasta);
     }
 }
 
